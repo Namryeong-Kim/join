@@ -9,8 +9,6 @@ def main():
     print("solc parsing...")
     parser()
 
-    target = CryticCompile(sys.argv[1]) # compile
-
     try:
         if isinstance(target, CryticCompile):
             crytic_compile = target
