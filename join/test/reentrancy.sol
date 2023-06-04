@@ -16,6 +16,7 @@ contract EtherStore {
         require(sent, "Failed to send Ether");
 
         balances[msg.sender] = 0;
+        revert("revert");
     }
 
     // Helper function to check the balance of this contract
